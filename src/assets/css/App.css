@@ -1,0 +1,145 @@
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.weather-widget {
+  border: 1px solid #dfe1e5;
+  margin: 50px auto;
+  width: 600px;
+  border-radius: 8px;
+  padding: 20px 16px 24px 16px;
+  max-width: 80%;
+}
+.weather {
+  color: #878787;
+}
+.weather h1 {
+  font-size: 24px;
+  font-weight: 100;
+  height: 28px;
+  line-height: 28.8px;
+  text-align: left;
+}
+.weather p {
+  font-size: 16px;
+  font-weight: 100;
+  height: 19px;
+  line-height: 19.2px;
+}
+.tempratrue {
+  padding: 20px 0 0;
+}
+.tempratrue img {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.tempratrue-data {
+  color: #212121;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+.tempratrue-data .number {
+  font-size: 64px;
+  display: inline-block;
+  vertical-align: top;
+}
+.tempratrue-data .unit {
+  font-size: 16px;
+  font-weight: 400;
+  height: 18px;
+  line-height: normal;
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+.forecast-list {
+  padding-top: 7px;
+  white-space: nowrap;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: auto;
+  display: flex;
+}
+.forecast-item {
+  line-height: 1;
+  text-align: center;
+  width: 13.8%;
+  padding: 8px 0;
+  margin: 0 0.25%;
+  cursor: pointer;
+  min-width: 80px;
+}
+.forecast-item.active {
+  background-color: #fcfcfc;
+  border: 1px solid #e9e9e9;
+  border-radius: 1px;
+  margin: 0;
+}
+.forecast-item span {
+  padding-top: 7px;
+  line-height: 15px;
+  color: #bababa;
+  font-size: 13px;
+  padding: 0 2px;
+}
+.forecast-item .tempratrue img {
+  margin: 3px auto;
+  height: 48px;
+  width: 48px;
+  display: block;
+}
+.forecast-item .tempratrue {
+  padding: 0;
+}
+
+.tempratrue-data {
+  display: inline-block;
+  padding-right: 5px;
+  font-size: 13px;
+}
+.tempratrue-data .high {
+  color: #878787;
+}
+.tempratrue-data .low {
+  color: #bababa;
+}
+.filter {
+  float: right;
+}
+.filter label {
+  color: #878787;
+  font-size: 16px;
+}
+.filter select {
+  width: 130px;
+  height: 25px;
+  border: 1px solid #d9d9d9;
+  border-radius: 1px;
+  color: #333;
+  margin: 0 0 0 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .weather-widget {
+    max-width: 92%;
+    margin: 20px auto;
+    padding: 15px 10px;
+    box-sizing: border-box;
+  }
+  .filter {
+    float: none;
+    padding: 0 0 10px;
+  }
+  .filter select {
+    width: 70%;
+  }
+}
